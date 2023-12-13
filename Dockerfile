@@ -1,9 +1,9 @@
-FROM alpine:3.7
-MAINTAINER "Bulat Vakhitov - https://github.com/fclmman"
+FROM alpine:3.19.0
+MAINTAINER "Linnovate - https://linnovate.net"
 
 CMD ["nginx", "-g", "daemon off;"]
 
-ENV NGINX_VERSION 1.15.1
+ENV NGINX_VERSION 1.24.0
 
 RUN set -ex \
   && apk add --no-cache \
